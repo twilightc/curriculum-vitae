@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- title icon -->
+  <!-- <link rel="icon" type="image/icon" href="./assets/title/favicon.svg"> -->
+  <!-- css myself -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./utils/css/go_top_button.css">
+</head>
+
+<body>
+  <div class="root">
+    <div class="list-field">
+      <div class="avatar"><img src="./assets/name.png" alt="name"></div>
+      <div class="list-group">
+        <ul class="content-list">
+          <li>
+            <a href="#about-me">About me</a>
+          </li>
+          <li>
+            <a href="#working-skill">Working Skill</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact me</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="content-field">
+      <div id="about-me">
+        <p style="font-weight: 600;">About Me</p>
+        <div>
+          2019年二月底當完兵後，2019年五月始，於Nexify Limited任職front-end developer至今。
+        </div>
+        <div>
+          主要發展項目為前端部分，曾經使用過的框架有Angular，Vue，以及React
+          ，詳細請看下面demo部分；目前正持續學習React相關知識，以及加強對js的理解。
+        </div>
+        <div>
+          對於後端相關也有涉獵，可以用c#搭配sql server做出基本的CRUD api操作。
+          另外也能使用c#在資料庫與excel間匯出/匯入資料。
+        </div>
+      </div>
+      <div id="working-skill">
+        <p style="font-weight: 600;">Working Skill</p>
+        <div>
+          Web Development:
+          <code>HTML</code> ,
+          <code>CSS</code>,
+          <code>SCSS</code>,
+          <code>JavaScript</code>
+        </div>
+        <div>
+          Framework/Library:
+          <code>Vue.js</code>,
+          <code>React.js</code>,
+          <code>Angular</code>
+        </div>
+        <div>
+          Other skill: <code>c-sharp</code>, <code>mysql</code>
+        </div>
+      </div>
+      <div id="portfolio">
+        <p style="font-weight: 600;">Portfolio</p>
+        <div class="upload-website-part">
+          <div class="carousel-wrapper">
+            <div class="cust-carousel-placeholder">
+              <cust-carousel class="cust-carousel" id="carousel1" imgSource="">
+              </cust-carousel>
+            </div>
+          </div>
+          <div class="chip-field">
+            <div class="chip">vue2.0</div>
+            <div class="chip">vuex</div>
+            <div class="chip">vue-router</div>
+            <div class="chip">axios</div>
+            <div class="chip">notificationApi</div>
+          </div>
+          <span>
+            因應工讀生需要在公司以外的地方能隨時上傳檔案而生的網站。主要負責前端部分，以vue2為基底，搭配element-ui等套件完成。
+            為了讓工讀生即時收到特定文件需重新修改的訊息，實作類似FB通知的效果，並且點擊通知後，被點擊的通知會改變顏色。
+          </span>
+        </div>
+        <div class="achome-part">
+          <div class="carousel-wrapper">
+            <div class="cust-carousel-placeholder">
+              <cust-carousel class="cust-carousel" id="carousel2" imgSource="">
+              </cust-carousel>
+            </div>
+          </div>
+          <div class="chip-field">
+            <div class="chip">angular8.0</div>
+            <div class="chip">typescript</div>
+            <div class="chip">rxjs</div>
+          </div>
+          <div>
+            以angular為底的side-project，這部分實作的功能為前台。除了angular框架本身提供的多種功能外，也一併學習如何使用及理解Rxjs對於資料操作方面的便利性；使用lazy-loading，漸進式載入網頁內容以增進使用者體驗。
+          </div>
+        </div>
+        <div class="achome-backstage-part">
+          <div class="carousel-wrapper">
+            <div class="cust-carousel-placeholder">
+              <cust-carousel class="cust-carousel" id="carousel3" imgSource="">
+              </cust-carousel>
+            </div>
+          </div>
+          <div class="chip-field">
+            <div class="chip">react</div>
+            <div class="chip">react-router</div>
+            <div class="chip">typescript</div>
+          </div>
+          <div>
+            與上面的前台成對，這個side-project實作後台部分，以react寫成。目前仍在開發中。
+            使用function component，配合useEffect, useCallback以及router等react-hook完成網頁畫面渲染及切換components。
+            最後，配合ts進行開發，在compile time就能及早修正錯誤。
+          </div>
+        </div>
+        <div class="achome-backend-part">
+          <div class="carousel-wrapper">
+            <div class="cust-carousel-placeholder">
+              <cust-carousel class="cust-carousel" id="carousel4" imgSource="">
+              </cust-carousel>
+            </div>
+          </div>
+          <div class="chip-field">
+            <div class="chip">c-sharp</div>
+            <div class="chip">JWT</div>
+            <div class="chip">dependcy injection</div>
+            <div class="chip">mvc architecture</div>
+          </div>
+          <div>
+            Achome的後端部分，使用asp.net core3.1，搭配swagger，dapper等套件，能根據api的需求，送回對應形式的資料。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="contact-me">
+      <span>
+        聯繫方式：
+      </span>
+      <div class="outerlinks">
+        <a href="mailto:timmyc2007@gmail.com" style="color: #000000;">email</a>
+        <a href="https://www.facebook.com/chang.timmy.5/" target="_blank" rel="noreferrer">
+          <img style="width: 30px;height: 30px;" src="https://image.flaticon.com/icons/svg/1384/1384005.svg"
+            alt="facebook">
+        </a>
+        <a href="https://github.com/twilightc?tab=repositories" target="_blank" rel="noreferrer">
+          <img style="width: 30px;height: 30px;" src="https://image.flaticon.com/icons/svg/25/25231.svg"
+            alt="github-logo">
+        </a>
+      </div>
+    </div>
+    <div>
+      <button type="button" id="BackTop" class="toTop-arrow"></button>
+    </div>
+    <div class="modal-field">
+      <div class="modal" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toTopBtn = document.querySelector('.toTop-arrow');
+    console.log(toTopBtn);
+
+    toTopBtn.addEventListener('click', () => {
+
+      if (!window.scrollTo) {
+        return;
+      }
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+
+    });
+
+    function updateImgSource() {
+      let carousels = document.querySelectorAll('.cust-carousel');
+      let urlsUploadWebsite = ['./assets/upload-website/upload-website-eg1.png', './assets/upload-website/upload-website-eg2.png', './assets/upload-website/upload-website-eg3.png', './assets/upload-website/upload-website-eg4.png'];
+      let urlsAchome = ['./assets/achome/achome-eg1.png', './assets/achome/achome-eg2.png', './assets/achome/achome-eg3.png', './assets/achome/achome-eg4.png'];
+      let urlsAchomeBackStage = ['./assets/achome-backstage/angular-backstage-eg1.png', './assets/achome-backstage/achome-backstage-eg2.png', './assets/achome-backstage/achome-backstage-eg3.png'];
+      let urlsAchomeBackEnd = ['./assets/achome-backend/achome-backend-eg1.png', './assets/achome-backend/achome-backend-eg2.png'];
+
+      carousels.forEach((carousel, index) => {
+        if (index === 0) {
+          carousel.imgsToShow = urlsUploadWebsite;
+        } else if (index === 1) {
+          carousel.imgsToShow = urlsAchome;
+        } else if (index === 2) {
+          carousel.imgsToShow = urlsAchomeBackStage;
+        } else if (index === 3) {
+          carousel.imgsToShow = urlsAchomeBackEnd;
+        }
+      })
+
+      document.addEventListener('imgClickEvent', (e) => {
+        const { element: imgElement } = e.detail;
+        imgElement.classList.add('modal-img');
+        let modalField = document.querySelector('.modal-field');
+        modalField.appendChild(imgElement);
+        let modalDialog = document.querySelector('.modal-dialog');
+        modalDialog.appendChild(imgElement);
+        document.querySelector('.modal').classList.add(isVisible);
+      })
+    }
+    updateImgSource();
+
+    window.onscroll = () => {
+      if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        toTopBtn.style.display = 'block';
+        toTopBtn.style.zIndex = 200;
+      } else {
+        toTopBtn.style.display = 'none';
+      }
+    }
+
+    // const avatar = document.querySelector('.avatar');
+
+  </script>
+
+  <!-- <script src="/utils/js/web_component/cv_carousel.js"></script> -->
+  <script src="/utils/js/scroll_behavior.js"></script>
+  <script src="/cv.js"></script>
+</body>
+
+</html>
