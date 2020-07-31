@@ -18,12 +18,12 @@ body {
   line-height: 30px;
 }
 
-a {
+nav a {
   cursor: pointer;
   text-decoration: none;
   color: white;
 }
-a:hover {
+nav a:hover {
   color: aquamarine;
   text-decoration: none;
 }
@@ -105,7 +105,7 @@ code {
 .content-field > div {
   display: flex;
   max-width: 900px;
-  width: 100%;
+  /* width: 100%; */
 }
 @media (max-width: 375px) {
   .content-field * {
@@ -127,7 +127,6 @@ code {
 #portfolio,
 #working-skill {
   flex-direction: column;
-  /* padding: 4px; */
 }
 @media (max-width: 1000px) {
   #about-me,
@@ -143,6 +142,10 @@ code {
     align-items: center;
     padding: 0;
   }
+}
+
+#working-skill {
+  width: 100%;
 }
 
 /*  modal-dialog  */
@@ -163,7 +166,6 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 1rem; */
   background: var(--black);
   cursor: pointer;
   visibility: hidden;
@@ -209,6 +211,7 @@ code {
 .chip {
   width: auto;
   padding: 10px;
+  margin: 3px;
   font-weight: 600;
   display: inline-block;
   background-color: #17a2b8;
@@ -233,4 +236,18 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.project-link {
+  font-weight: bold;
+  margin: 10px;
+}
+
+.intro {
+  margin: 10px;
+}
+
+.github-link {
+  color: black;
+  text-decoration: none;
 }
